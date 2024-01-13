@@ -8,7 +8,7 @@
 
 #fire {
   width: 100%; /* Ocupa 100% da largura do contêiner */
-  height: auto;
+  height: 52dvi;
 
 }
 
@@ -87,7 +87,7 @@
   max-width: 100%; /* Garante que a caixa de diálogo não ultrapasse a largura do contêiner */
 }
 
-#katesdialogue {
+#Eldrystandialogue {
   font-family: 'Medieval02', serif;
 }
 
