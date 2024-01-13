@@ -9,7 +9,6 @@
 #fire {
   width: 100%; /* Ocupa 100% da largura do contêiner */
   height: 52dvi;
-
 }
 
 #fire-text {
@@ -46,26 +45,31 @@
 }
 /* /Responsividade Bem-Vindo */
 
-
-/* Kate's Response */
-@media screen and (max-width: 950px) and (min-width: 0px) {
-  #kate {
-    width: 510px;
-  }
-}
-/* /Kates's Response */
-
 /* Container principal */
 #kontainer {
-  display: flex;
-  flex-direction: row; /* Alinha os elementos horizontalmente */
-  align-items: flex-start; /* Alinha os elementos no início verticalmente */
+  position: absolute;
+  top: 37%; /* Ajuste a posição conforme necessário */
+  left: 80%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+
+  z-index: 1; /* Certifique-se de que o kontainer esteja acima da imagem fire */
+  /* Adicione qualquer outra estilização necessária para o kontainer */
 }
 
 /* Kate's */
 .npc {
   text-align: left;
   margin-right: 20px; /* Espaçamento entre a personagem e a caixa de diálogo */
+}
+
+/* Adicione regras de mídia para tornar o layout mais responsivo */
+@media only screen and (max-width: 600px) {
+  #kontainer {
+    top: 40%; /* Ajuste conforme necessário para uma posição responsiva em telas menores */
+  }
 }
 
 .katesname{
