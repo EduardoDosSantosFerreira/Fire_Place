@@ -1,0 +1,161 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* /Reset CSS */
+  
+  /* Nav */
+  
+  .menu-container {
+    position: fixed;
+    top: 0;
+    right: 0; /* Alterado de 'left' para 'right' */
+    width: 93px;
+    z-index: 2;
+  }
+  
+  .off-canvas-menu {
+    background-color: rgba(0, 0, 0, 0.649);
+    position: fixed;
+    top: 0;
+    right: -300px; /* Alterado de 'left' para 'right' */
+    width: 300px;
+    height: 100%;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Ajustado a sombra para o lado direito */
+    transition: right 0.3s ease; /* Alterado de 'left' para 'right' */
+  }
+  
+  .off-canvas-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .off-canvas-menu li {
+    margin-bottom: 23px;
+  }
+  
+  .off-canvas-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+  }
+  
+  .off-canvas-menu button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .off-canvas-menu button#close-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .content {
+    padding-top: 60px;
+    margin-right: 320px; /* Adicionado margem à direita para evitar sobreposição */
+  }
+  /* Icons SUP GIF */
+
+#bussola {
+    width: 45px;
+    height: 45px;
+  }
+  
+  #map {
+    width: 50px;
+    position: fixed;
+    top: 10px; /* Ajuste conforme necessário */
+    right: 10px; /* Ajuste conforme necessário */
+    cursor: pointer;
+    z-index: 999; /* Certifique-se de que o mapa esteja acima de outros elementos, se necessário */
+  }
+  /* /* Icons SUP GIF */
+  
+  /* Icons OffMenuSet */
+  
+  #jkbx {
+    width: 50px;
+  }
+  
+  #campfire {
+    width: 60px;
+    padding-left: 10px;
+  }
+  
+  #totem {
+    width: 60px;
+    padding-left: 10px;
+  }
+  
+  #livro_pena {
+    width: 60px;
+    padding-left: 10px;
+  }
+  
+  #livro_encantado {
+    width: 60px;
+    padding-left: 10px;
+  }
+  
+  #enchanting_table {
+    width: 65px;
+    padding-left: 10px;
+  }
+  
+  #bau {
+    width: 60px;
+    padding-left: 10px;
+  }
+  
+  #about {
+    text-align: center;
+    align-items: center;
+  }
+  
+  /* /Icons OffMenuSet */
+
+  /* Footer */
+  footer {
+    background-color: #f8f8f8;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  /* Footer */
+
+  /* Barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      to right,
+      #ffffff4d,
+      #ffffff5e
+    ); /* Degrade de vermelho para laranja para azul escuro na barra de rolagem */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+      to right,
+      #ffffff,
+      #ffffff
+    ); /* Degrade ao passar o mouse */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #000033; /* Cor de fundo da barra de rolagem (azul bem escuro) */
+  }
+  
+  /* / Barra de rolagem */

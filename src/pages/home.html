@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FirePlace</title>
+  <!-- CSS -->
+  <link rel="icon" type="image" sizes="50x50" href="/src/data/assets/img/icons/fire.png">
+  <link rel="stylesheet" href="/src/data/assets/css/styles/styleforhome.css">
+  <link rel="stylesheet" href="/src/data/assets/css/static/bootstrap.min.css">
+  <link rel="stylesheet" href="/src/data/assets/css/utils/offmenu.css">
+  <link rel="stylesheet" href="/src/data/assets/css/static/aos.css">
+  <link rel="stylesheet" href="/src/data/fonts/fonts.css">
+
+  <!-- Biblioteca -->
+  <link rel="stylesheet" href="/src/data/assets/css/lib/book01.css">
+  <!-- /Biblioteca -->
+
+  <!-- /CSS -->
+</head>
+
+<body>
+  <!-- NAV -->
+  <div class="menu-container">
+    <img src="/src/data/assets/img/icons/map.webp" id="map" alt="Abrir Menu"> 
+    <nav class="off-canvas-menu">
+      <button id="close-menu"><img src="/src/data/video/gif/off_menu/compass.gif" id="bussola" alt="Fechar Menu">
+        Close </button>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+          <img src="/src/data/video/gif/off_menu/Campfire.webp" id="campfire" alt="Home">
+        </li>
+        <li>
+          <a href="#">About</a>
+          <img src="/src/data/video/gif/off_menu/blinktotem.gif" id="totem" alt="About/Sobre">
+        </li>
+        <li>
+          <a href="#">Projects</a>
+          <img src="/src/data/video/gif/off_menu/Enchanting_Table.webp" id="enchanting_table" alt="Projetos">
+        </li>
+        <li>
+          <a href="#">Repository</a>
+          <img src="/src/data/video/gif/off_menu/Chest.webp" id="bau" alt="Repositório">
+        </li>
+        <li>
+          <a href="#">Curriculum</a>
+          <img src="/src/data/video/gif/off_menu/Enchanted_Book.webp" id="livro_encantado" alt="Curriculum">
+        </li>
+        <li>
+          <a href="#">Contact</a>
+          <img src="/src/data/assets/img/icons/livro_pena.png" id="livro_pena" alt="Contato">
+        </li>
+        <img src="/src/data/video/gif/off_menu/jukebox.gif" id="jkbx" alt="Music">
+      </ul>
+    </nav>
+  </div>
+  <!-- /NAV -->
+
+  <!-- ÁUDIO 1: Chuva -->
+  <audio id="audioChuva" loop>
+    <source src="/src/data/audio/chuva.mp3" type="audio/mp3">
+    Seu navegador não suporta a tag de áudio.
+  </audio>
+
+  <!-- ÁUDIO 2: Floresta -->
+  <audio id="audioFloresta" loop>
+    <source src="/src/data/audio/floresta.mp3" type="audio/mp3">
+    Seu navegador não suporta a tag de áudio.
+  </audio>
+
+  <!-- ÁUDIO 3: Fogueira -->
+  <audio id="audioFogueira" loop>
+    <source src="/src/data/audio/fogueira.mp3" type="audio/mp3">
+    Seu navegador não suporta a tag de áudio.
+  </audio>
+
+  <!-- INTRO -->
+  <div id="fire-container">
+    <p data-aos="fade-top" id="fire-text">Bem-vindo!</p>
+    <img src="/src/data/video/gif/locations/bonfire/fireplace_nook_v2.gif" class="img-fluid" id="fire" alt="Uma fogueira para o viajante relaxar.">
+  </div>
+
+  <!-- /INTRO -->
+
+  <!-- MAIN -->
+  
+  <div id="kontainer" class="container">
+    <!-- Kate -->
+    <div class="npc">
+<div data-aos="fade-right" class="katesname">
+  <h1>Kate</h1>
+</div>
+      <img data-aos="fade-top" src="/src/data/assets/img/npc/kate.png" class="img-fluid" id="kate" alt="Kate">
+    </div>
+    <!-- /Kate -->
+    
+    <!-- Kate's Dialogue -->
+    <div data-aos="fade-right" class="dialogue-container">
+      <div class="dialogue" id="katesdialogue">
+        <p>Oh, olá, adorável viajante ! Que alegria ter você em minha humilde morada! Bem-vindo ao meu cantinho
+          aconchegante. Espero que sua jornada tenha sido segura e repleta descobertas!</p>
+        </div>
+        <!-- Botões de diálogo -->
+        <div class="button-container">
+          <button class="dialogue-button" id="prevButton" onclick="dialogoAnterior()">Diálogo Anterior</button>
+          <button class="dialogue-button" id="nextButton" onclick="proximoDialogo()">Próximo Diálogo</button>
+        </div>
+      </div>
+    </div>
+    <!-- /Kate's Dialogue -->
+    
+
+
+  <!-- /MAIN -->
+
+
+
+  <!-- JS  -->
+
+  <!-- AOS -->
+
+  <script src="/src/data/assets/js/static/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 2000,
+    }
+    );
+  </script>
+
+  <!-- /AOS -->
+
+  <!-- FST -->
+
+  <a href="#" class="to-top">
+    <i class="fa fa-chevron-up" style="font-size:25px;color:rgb(0, 0, 0)"></i></a>
+  <script src="/src/data/assets/js/scripts/main.js"></script>
+
+  <!-- /FST -->
+
+  <!-- Boostrap -->
+
+  <script src="/src/data/assets/js/static/bootstrap.bundle.min.js"></script>
+  <script src="/src/data/assets/js/static/popper.min.js"></script>
+
+  <!-- /Bootstrap -->
+
+  <!-- Audio -->
+
+  <script src="/src/data/assets/js/services/audio.js"></script>
+
+  <!-- /Audio -->
+
+  <!-- Biblioteca -->
+
+  <script src="/src/data/assets/js/lib/book01.js"></script>
+
+  <!-- /Biblioteca -->
+
+  <!-- Dialogues -->
+  <script src="/src/data/assets/js/npc/dialogue01.js"></script>
+
+  <!-- Logo -->
+  <script src="/src/data/assets/js/scripts/logos.js"></script>
+  <!-- /Logo -->
+
+  <!-- /JS -->
+
+</body>
+
+</html>
+<!-- Todos os direitos reservados a Eduardo dos Santos Ferreira -->

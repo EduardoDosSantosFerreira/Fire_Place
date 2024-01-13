@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+  html, body{
+    font-family: 'Alargard', serif;
+    font-size: 20px;
+    background-color: #00000f;
+    color: #fff;
+}
+
+  @font-face {
+    font-family: 'Alargard';
+    src: url('./alagard.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Medieval01';
+    src: url('./MedievalSharp-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Medieval02';
+    src: url('./Augusta.ttf') format('truetype');
+  }

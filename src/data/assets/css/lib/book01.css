@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+.book {
+  font-family: 'Medieval02';
+  display: flex;
+  margin: auto;
+  width: 300px;
+  pointer-events: none;
+  transform-style: preserve-3d;
+  transition: translate 1s;
+  translate: calc(min(var(--c), 1) * 50%) 0%;
+  rotate: 1 0 0 30deg;
+  color: black;
+}
+
+.page {
+  --thickness: 5;
+  flex: none;
+  display: flex;
+  width: 100%;
+  pointer-events: all;
+  user-select: none;
+  transform-style: preserve-3d;
+  border: 5px solid #212121;
+  transform-origin: left center;
+  transition: transform 1s, rotate 1s ease-in calc((min(var(--i), var(--c)) - max(var(--i), var(--c))) * 50ms);
+  translate: calc(var(--i) * -100%) 0px 0px;
+  transform: translateZ(calc((var(--c) - var(--i) - 0.5) * calc(var(--thickness) * 1px)));
+  rotate: 0 1 0 calc(clamp(0, var(--c) - var(--i), 1) * -180deg);
+}
+
+.page img {
+  width: 100%;
+  height: auto; /* Alterado para garantir proporções corretas */
+  object-fit: cover;
+}
+
+.front,
+.back {
+  flex: none;
+  width: 100%;
+  padding: 2rem;
+  backface-visibility: hidden;
+  background-color: #f6efd9;
+  translate: 0px;
+  border: 5px inset #f0d48a;
+  background-image: url(/src/data/assets/img/pages/adorn_page.png);
+  background-position: center; /* Centraliza a imagem */
+  background-size: cover; /* Garante que a imagem cubra completamente o elemento */
+}
+
+.back {
+  background-color: #f6efd9;
+  translate: -100% 0;
+  rotate: 0 1 0 180deg;
+  border: 5px solid #cc9c55;
+}
+
+@media screen and (max-width: 600px) {
+  .book {
+    width: 200px; /* Faça o ajuste conforme necessário para telas menores */
+    height: 300px;
+    rotate: 0; /* Redefina a rotação para telas menores, se necessário */
+  }
+
+  .page {
+    --thickness: 1; /* Ajuste conforme necessário para telas menores */
+  }
+
+  .front,
+  .back {
+    padding: 1rem; /* Ajuste conforme necessário para telas menores */
+    font-size: small;
+  }
+}
+
+
+#capa{
+  background-image: url(/src/data/assets/img/capas/couro_negro.png);
+  color: #f0d48a;
+}
+
+#costas{
+  background-image: url(/src/data/assets/img/capas/couro_negro.png);
+  color: #f0d48a;
+
+}
