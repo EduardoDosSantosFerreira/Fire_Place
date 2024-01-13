@@ -73,7 +73,7 @@
   padding-right: 60px;
 }
 
-#kate {
+#Eldrystan {
   width: 250px; /* Ajuste conforme necessário */
   height: auto;
 }
@@ -101,6 +101,7 @@
 }
 
 .button-container {
+  font-family: 'Medieval02', serif;
   display: flex;
   justify-content: center; /* Centraliza os botões horizontalmente */
   margin-top: 10px; /* Espaçamento entre a caixa de diálogo e os botões */
