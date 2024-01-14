@@ -7,7 +7,7 @@
 /* Campfire GIF */
 #fire {
   width: 100%; /* Ocupa 100% da largura do contêiner */
-  height: auto; /* Ajuste para altura automática */
+  height: 51dvi; /* Ajuste para altura automática */
 }
 
 #fire-text {
