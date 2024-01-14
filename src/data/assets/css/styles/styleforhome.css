@@ -34,11 +34,19 @@
 }
 
 /* Responsividade Bem-Vindo */
-@media screen and (max-width: 457px) and (min-width: 0px) {
+/* Responsividade Fire Text */
+@media screen and (max-width: 600px) {
   #fire-text {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  #fire-text {
+    font-size: 40px;
+  }
+}
+
 
 /* Container principal */
 #kontainer {
@@ -148,12 +156,11 @@
 }
 
 /* Marcador */
-/* Marcador */
 .loader {
   width: 44.8px;
   height: 44.8px;
   position: absolute;
-  top: 90%;
+  top: 93%;
   left: 45%;
   transform: translate(-50%, -50%) rotate(45deg);
   z-index: 2; /* Set z-index higher than the "fire" image */
@@ -161,6 +168,10 @@
 
 /* Rest of your existing styles... */
 
+@media screen and (max-width: 100000px) and (min-width: 1200px) {
+  
+
+}
 
 .loader:before,
 .loader:after {
@@ -181,5 +192,22 @@
   to {
     transform: perspective(336px) translateZ(168px);
     opacity: 0;
+  }
+}
+
+/* Responsividade Loader */
+@media screen and (max-width: 600px) {
+  .loader {
+    width: 44.8px;
+    height: 44.8px;
+    top: 80%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .loader {
+    width: 44.8px;
+    height: 44.8px;
+    top: 93%; /* Adjust the position */
   }
 }
