@@ -61,33 +61,28 @@
   <!-- ÁUDIO 1: Chuva -->
   <audio id="audioChuva" loop>
     <source src="../data/audio/chuva.mp3" type="audio/mp3">
-    Seu navegador não suporta a tag de áudio.
   </audio>
 
   <!-- ÁUDIO 2: Floresta -->
   <audio id="audioFloresta" loop>
     <source src="../data/audio/floresta.mp3" type="audio/mp3">
-    Seu navegador não suporta a tag de áudio.
   </audio>
 
   <!-- ÁUDIO 3: Fogueira -->
   <audio id="audioFogueira" loop>
     <source src="../data/audio/fogueira.mp3" type="audio/mp3">
-    Seu navegador não suporta a tag de áudio.
   </audio>
 
   <!-- INTRO -->
   <div id="fire-container">
     <p data-aos="fade-top" id="fire-text">Bem-vindo!</p>
-    <img src="../data/video/gif/locations/bonfire/fireplace_nook_v2.gif" class="img-fluid" id="fire"
-      alt="Uma fogueira para o viajante relaxar.">
-
+    <img src="../data/video/gif/locations/bonfire/fireplace_nook_v2.gif" class="img-fluid" id="fire" alt="Uma fogueira para o viajante relaxar.">
     <!-- /INTRO -->
-
+    
     <!-- MAIN -->
-
+    
     <div id="kontainer" class="container">
-
+      
       <!-- Eldrystan -->
       <div class="npc">
         <div data-aos="fade-right" class="Eldrystan">
@@ -105,13 +100,13 @@
         </div>
         <!-- Botões de diálogo -->
         <div class="button-container">
-          <button class="dialogue-button" id="prevButton" onclick="dialogoAnterior()">Diálogo Anterior</button>
           <button class="dialogue-button" id="nextButton" onclick="proximoDialogo()">Próximo Diálogo</button>
+          <button class="dialogue-button" id="prevButton" onclick="dialogoAnterior()">Diálogo Anterior</button>
         </div>
       </div>
     </div>
+    <div class="loader"></div>
   </div>
-
   <!-- /Eldrystan's Dialogue -->
 
   <!-- /MAIN -->
@@ -128,16 +123,16 @@
     );
   </script>
 
-  <!-- /AOS -->
+<!-- /AOS -->
 
-  <!-- FST -->
+<!-- FST -->
 
-  <a href="#" class="to-top">
+<a href="#" class="to-top">
     <i class="fa fa-chevron-up" style="font-size:25px;color:rgb(0, 0, 0)"></i></a>
-  <script src="../data/assets/js/scripts/main.js"></script>
-
-  <!-- /FST -->
-
+    <script src="../data/assets/js/scripts/main.js"></script>
+    
+    <!-- /FST -->
+    
   <!-- Boostrap -->
 
   <script src="../data/assets/js/static/bootstrap.bundle.min.js"></script>

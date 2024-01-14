@@ -146,3 +146,40 @@
     margin: 5px 0; /* Espaçamento entre os botões de diálogo em telas menores */
   }
 }
+
+/* Marcador */
+/* Marcador */
+.loader {
+  width: 44.8px;
+  height: 44.8px;
+  position: absolute;
+  top: 90%;
+  left: 45%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  z-index: 2; /* Set z-index higher than the "fire" image */
+}
+
+/* Rest of your existing styles... */
+
+
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50% 50% 0 50%;
+  background: #0000;
+  background-image: radial-gradient(circle 11.2px at 50% 50%,#0000 94%, #0c8f00);
+}
+
+.loader:after {
+  animation: pulse-ytk0dhmd 1s infinite;
+  transform: perspective(336px) translateZ(0px);
+}
+
+@keyframes pulse-ytk0dhmd {
+  to {
+    transform: perspective(336px) translateZ(168px);
+    opacity: 0;
+  }
+}
