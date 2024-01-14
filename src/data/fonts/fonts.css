@@ -20,3 +20,8 @@
     font-family: 'Medieval02';
     src: url('./Augusta.ttf') format('truetype');
   }
+
+  @font-face {
+    font-family: 'King';
+    src: url('./(KING ARTHUR).ttf') format('truetype');
+  }

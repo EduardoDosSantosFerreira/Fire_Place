@@ -45,7 +45,8 @@
   text-align: left;
   position: absolute;
   top: 50%; /* Ajuste a posição conforme necessário */
-  left: 70%;
+  left: 50%;
+  padding-left: 270px;
   transform: translate(-50%, -50%);
   font-size: 20px;
   color: white;
@@ -54,6 +55,12 @@
 }
 
 /* Adicione regras de mídia para tornar o layout mais responsivo */
+@media only screen and (max-width: 800px) {
+  #kontainer {
+    font-size: 18px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   #kontainer {
     top: 60%; /* Ajuste conforme necessário para uma posição responsiva em telas menores */
@@ -61,12 +68,10 @@
   }
 }
 
-/* Restante do seu CSS continua aqui */
-
-
-#Eldrystan {
-  width: 250px; /* Ajuste conforme necessário */
-  height: auto;
+/* Kate's e Dialogue */
+.npc {
+  text-align: left;
+  margin-right: 20px; /* Espaçamento entre a personagem e a caixa de diálogo */
 }
 
 /* Dialogue */
