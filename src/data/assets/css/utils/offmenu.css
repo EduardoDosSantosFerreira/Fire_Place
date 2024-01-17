@@ -1,13 +1,8 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  /* /Reset CSS */
-  
   /* Nav */
-  
+  .menu-container {
+    overflow-y: auto; /* Adiciona barra de rolagem invisível à navbar */
+}
+
   .menu-container {
     position: fixed;
     top: 0;
@@ -26,6 +21,8 @@
     padding: 20px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Ajustado a sombra para o lado direito */
     transition: right 0.3s ease; /* Alterado de 'left' para 'right' */
+    overflow-y: auto; /* Adiciona barra de rolagem invisível ao menu off-canvas */
+
   }
   
   .off-canvas-menu ul {
@@ -44,7 +41,7 @@
   }
   
   .off-canvas-menu button {
-    background-color: #555;
+    background-color: #55555500;
     color: white;
     border: none;
     padding: 10px;
@@ -85,32 +82,7 @@
     width: 50px;
   }
   
-  #campfire {
-    width: 60px;
-    padding-left: 10px;
-  }
-  
-  #totem {
-    width: 60px;
-    padding-left: 10px;
-  }
-  
-  #livro_pena {
-    width: 60px;
-    padding-left: 10px;
-  }
-  
-  #livro_encantado {
-    width: 60px;
-    padding-left: 10px;
-  }
-  
-  #enchanting_table {
-    width: 65px;
-    padding-left: 10px;
-  }
-  
-  #bau {
+  #icon {
     width: 60px;
     padding-left: 10px;
   }
@@ -121,17 +93,6 @@
   }
   
   /* /Icons OffMenuSet */
-
-  /* Footer */
-  footer {
-    background-color: #f8f8f8;
-    padding: 10px;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-  /* Footer */
 
   /* Barra de rolagem */
 ::-webkit-scrollbar {
@@ -159,3 +120,40 @@
   }
   
   /* / Barra de rolagem */
+
+  /* Adiciona estilos ao dropdown "Viagens" */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s linear;
+    transform-origin: top;
+    transform: scaleY(0);
+    visibility: hidden;
+}
+
+.dropdown-content.show {
+    display: block;
+    opacity: 1;
+    transform: scaleY(1);
+    visibility: visible;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    opacity: 0.8;
+}
