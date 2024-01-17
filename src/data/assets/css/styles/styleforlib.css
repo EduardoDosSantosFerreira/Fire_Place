@@ -10,10 +10,16 @@
 
 #lib-text {
     position: absolute;
-    top: 23%;
+    top: 19%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 44px;
     color: white;
     text-shadow: 22px 9px 5px rgb(0, 0, 0);
+  }
+
+  @media screen and (max-width: 1100px) {
+    #lib-text {
+      font-size: 35px;
+    }
   }
