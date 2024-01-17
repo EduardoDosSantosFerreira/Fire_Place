@@ -17,7 +17,8 @@
   transform: translate(-50%, -50%);
   font-size: 60px;
   color: white;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
   /* Adicionando animação */
   animation: floatUpAndDisappear 8s linear forwards;
 }
@@ -47,18 +48,17 @@
   }
 }
 
-
 /* Container principal */
 #kontainer {
   text-align: left;
   position: absolute;
   font-size: 20px;
   color: white;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
 }
 
 /* Container principal */
-
 
 /* Adicione regras de mídia para tornar o layout mais responsivo */
 @media screen and (max-width: 100000px) and (min-width: 1200px) {
@@ -71,7 +71,8 @@
     transform: translate(-50%, -50%);
     font-size: 20px;
     color: white;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+      0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
     z-index: 2; /* Certifique-se de que o kontainer esteja acima da imagem fire */
   }
 }
@@ -82,7 +83,8 @@
     position: absolute;
     font-size: 20px;
     color: white;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+      0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
   }
 }
 
@@ -102,7 +104,7 @@
 }
 
 #Eldrystandialogue {
-  font-family: 'Medieval02', serif;
+  font-family: "Medieval02", serif;
 }
 
 .dialogue {
@@ -115,7 +117,7 @@
 }
 
 .button-container {
-  font-family: 'Medieval02', serif;
+  font-family: "Medieval02", serif;
   display: flex;
   justify-content: center; /* Centraliza os botões horizontalmente */
   margin-top: 10px; /* Espaçamento entre a caixa de diálogo e os botões */
@@ -169,8 +171,6 @@
 /* Rest of your existing styles... */
 
 @media screen and (max-width: 100000px) and (min-width: 1200px) {
-  
-
 }
 
 .loader:before,
@@ -180,7 +180,11 @@
   inset: 0;
   border-radius: 50% 50% 0 50%;
   background: #0000;
-  background-image: radial-gradient(circle 11.2px at 50% 50%,#0000 94%, #0c8f00);
+  background-image: radial-gradient(
+    circle 11.2px at 50% 50%,
+    #0000 94%,
+    #0c8f00
+  );
 }
 
 .loader:after {
