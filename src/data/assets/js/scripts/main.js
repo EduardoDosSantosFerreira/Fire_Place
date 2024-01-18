@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var openMenuButton = document.getElementById("map");
   var closeMenuButton = document.getElementById("close-menu");
   var offCanvasMenu = document.querySelector(".off-canvas-menu");
-  var viagensDropdown = document.getElementById("viagens-dropdown");
+  var viagensDropdown = document.querySelector(".viagens-dropdown"); // Alterado para classe
 
   openMenuButton.addEventListener("click", function () {
     offCanvasMenu.style.right = "0"; // Abre o menu deslizando do lado direito
