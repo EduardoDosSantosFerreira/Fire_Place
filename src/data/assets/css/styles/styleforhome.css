@@ -1,3 +1,7 @@
+ body{
+  background-color: #3b1a00;
+}
+
 #fire-container {
   position: relative;
   text-align: center;

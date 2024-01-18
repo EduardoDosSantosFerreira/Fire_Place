@@ -6,7 +6,7 @@
 
 #blib {
   width: 100%; /* Ocupa 100% da largura do contêiner */
-  height: 51dvi; /* Ajuste para altura automática */
+  height: 52dvi; /* Ajuste para altura automática */
 }
 
 #lib-text {
@@ -30,4 +30,3 @@
     font-size: 15px;
   }
 }
-
