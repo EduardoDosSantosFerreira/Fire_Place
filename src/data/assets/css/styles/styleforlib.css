@@ -30,3 +30,169 @@
     font-size: 15px;
   }
 }
+
+/* Container principal */
+#kontainer {
+  text-align: left;
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+}
+
+/* Container principal */
+
+/* Adicione regras de mídia para tornar o layout mais responsivo */
+@media screen and (max-width: 100000px) and (min-width: 1200px) {
+  #kontainer {
+    text-align: left;
+    position: absolute;
+    top: 59%; /* Ajuste a posição conforme necessário */
+    left: 55%;
+    padding-left: 270px;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+      0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+    z-index: 2; /* Certifique-se de que o kontainer esteja acima da imagem fire */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #kontainer {
+    text-align: left;
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+      0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+  }
+}
+
+/* Kate's e Dialogue */
+.npc {
+  text-align: left;
+  margin-right: 20px; /* Espaçamento entre a personagem e a caixa de diálogo */
+}
+
+/* Dialogue */
+.dialogue-container {
+  display: flex;
+  flex-direction: column; /* Empilha os elementos verticalmente */
+  align-items: flex-start; /* Alinha a caixa de diálogo à esquerda */
+  margin-top: 10px; /* Espaçamento entre a personagem e a caixa de diálogo */
+  max-width: 100%; /* Garante que a caixa de diálogo não ultrapasse a largura do contêiner */
+}
+
+#Seranadialogue {
+  font-family: "Medieval02", serif;
+}
+
+.dialogue {
+  color: #000000;
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  max-width: 400px; /* Ajuste conforme necessário */
+}
+
+.button-container {
+  font-family: "Medieval02", serif;
+  display: flex;
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  margin-top: 10px; /* Espaçamento entre a caixa de diálogo e os botões */
+}
+
+.dialogue-button {
+  margin: 0 10px; /* Espaçamento entre os botões de diálogo */
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#nextButtonSerana {
+  background-color: #4caf50;
+  color: white;
+}
+
+#prevButtonSerana {
+  background-color: #2196f3;
+  color: white;
+}
+
+/* Adicione regras de mídia para tornar o layout mais responsivo */
+@media only screen and (max-width: 600px) {
+  .dialogue {
+    max-width: 100%; /* Em telas menores, a caixa de diálogo ocupará 100% da largura */
+  }
+
+  .button-container {
+    flex-direction: column; /* Empilha os botões verticalmente em telas menores */
+    align-items: center; /* Centraliza os botões verticalmente em telas menores */
+  }
+
+  .dialogue-button {
+    margin: 5px 0; /* Espaçamento entre os botões de diálogo em telas menores */
+  }
+}
+
+/* Marcador */
+.loader {
+  width: 44.8px;
+  height: 44.8px;
+  position: absolute;
+  top: 93%;
+  left: 45%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  z-index: 2; /* Set z-index higher than the "fire" image */
+}
+
+@media screen and (max-width: 100000px) and (min-width: 1200px) {
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50% 50% 0 50%;
+  background: #0000;
+  background-image: radial-gradient(
+    circle 11.2px at 50% 50%,
+    #0000 94%,
+    #0c8f00
+  );
+}
+
+.loader:after {
+  animation: pulse-ytk0dhmd 1s infinite;
+  transform: perspective(336px) translateZ(0px);
+}
+
+@keyframes pulse-ytk0dhmd {
+  to {
+    transform: perspective(336px) translateZ(168px);
+    opacity: 0;
+  }
+}
+
+/* Responsividade Loader */
+@media screen and (max-width: 600px) {
+  .loader {
+    width: 44.8px;
+    height: 44.8px;
+    top: 80%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .loader {
+    width: 44.8px;
+    height: 44.8px;
+    top: 93%; /* Adjust the position */
+  }
+}

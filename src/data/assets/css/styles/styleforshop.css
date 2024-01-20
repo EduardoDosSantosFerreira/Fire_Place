@@ -17,6 +17,9 @@
     font-size: 44px;
     color: white;
     text-shadow: 22px 9px 5px rgb(0, 0, 0);
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out; /* Adiciona uma transição de 1.5 segundos */
+
   }
   
   @media screen and (max-width: 1100px) {

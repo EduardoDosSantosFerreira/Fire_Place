@@ -21,60 +21,60 @@
 </head>
 
 <body>
-<!-- NAV -->
-<div class="menu-container">
-  <img src="../data/assets/img/icons/map.webp" id="map" alt="Abrir Menu">
-  <nav class="off-canvas-menu">
+  <!-- NAV -->
+  <div class="menu-container">
+    <img src="../data/assets/img/icons/map.webp" id="map" alt="Abrir Menu">
+    <nav class="off-canvas-menu">
       <button id="close-menu">
-          <img src="../data/video/gif/off_menu/compass.gif" id="bussola" alt="Fechar Menu"></button>
+        <img src="../data/video/gif/off_menu/compass.gif" id="bussola" alt="Fechar Menu"></button>
       <ul>
-          <li>
-              <a href="./home.html">Home</a>
-              <img src="../data/video/gif/off_menu/Campfire.webp" id="icon" alt="Home">
-          </li>
-          <li>
-              <a href="#">About</a>
-              <img src="../data/video/gif/off_menu/blinktotem.gif" id="icon" alt="About/Sobre">
-          </li>
-          <li>
-              <a href="#">Projects</a>
-              <img src="../data/video/gif/off_menu/Enchanting_Table.webp" id="icon" alt="Projetos">
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropbtn">Viagens</a>
-            <div class="dropdown-content fade-down">
-              <a href="./home.html">Fogueira</a>
-              <a href="./library.html">Biblioteca</a>
-              <a href="./shop.html">Mercado</a>
-            </div>
-          </li>
-        
+        <li>
+          <a href="./home.html">Home</a>
+          <img src="../data/video/gif/off_menu/Campfire.webp" id="icon" alt="Home">
+        </li>
+        <li>
+          <a href="#">About</a>
+          <img src="../data/video/gif/off_menu/blinktotem.gif" id="icon" alt="About/Sobre">
+        </li>
+        <li>
+          <a href="#">Projects</a>
+          <img src="../data/video/gif/off_menu/Enchanting_Table.webp" id="icon" alt="Projetos">
+        </li>
         <li class="dropdown">
-            <a href="#" class="dropbtn">Mochila</a>
-            <div class="dropdown-content fade-down">
-                <a href="#">Armas</a>
-                <a href="#">Magias</a>
-                <a href="#">Coletaveis</a>
-            </div>
+          <a href="#" class="dropbtn">Viagens</a>
+          <div class="dropdown-content fade-down">
+            <a href="./home.html">Fogueira</a>
+            <a href="./library.html">Biblioteca</a>
+            <a href="./shop.html">Mercado</a>
+          </div>
         </li>
 
-          <li>
-              <a href="#">Repository</a>
-              <img src="../data/video/gif/off_menu/Chest.webp" id="icon" alt="Repositório">
-          </li>
-          <li>
-              <a href="#">Curriculum</a>
-              <img src="../data/video/gif/off_menu/Enchanted_Book.webp" id="icon" alt="Curriculum">
-          </li>
-          <li>
-              <a href="#">Contact</a>
-              <img src="../data/assets/img/icons/livro_pena.png" id="icon" alt="Contato">
-          </li>
-          <img src="../data/video/gif/off_menu/jukebox.gif" id="jkbx" alt="Music">
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Mochila</a>
+          <div class="dropdown-content fade-down">
+            <a href="#">Armas</a>
+            <a href="#">Magias</a>
+            <a href="#">Coletaveis</a>
+          </div>
+        </li>
+
+        <li>
+          <a href="#">Repository</a>
+          <img src="../data/video/gif/off_menu/Chest.webp" id="icon" alt="Repositório">
+        </li>
+        <li>
+          <a href="#">Curriculum</a>
+          <img src="../data/video/gif/off_menu/Enchanted_Book.webp" id="icon" alt="Curriculum">
+        </li>
+        <li>
+          <a href="#">Contact</a>
+          <img src="../data/assets/img/icons/livro_pena.png" id="icon" alt="Contato">
+        </li>
+        <img src="../data/video/gif/off_menu/jukebox.gif" id="jkbx" alt="Music">
       </ul>
-  </nav>
-</div>
-<!-- /NAV -->
+    </nav>
+  </div>
+  <!-- /NAV -->
 
   <!-- Biblioteca -->
   <div class="library" id="lib">
@@ -83,75 +83,42 @@
   </div>
   <!-- /Biblioteca -->
 
-  <!-- Portfolio -->
-  <!-- <div class="book">
-    <div class="page">
-      <div id="capa" class="front">
-        <h1>Portfolio</h1>
-        <h3>2024
-          <br>
-          <br>
-          <br>
-          <h4>Legendary edition</h4>
-        </h3>
-      </div>
-      <div class="back">
-        <h2>Intro</h2>
-        1. Ola Viajante seja Bem-Vindo ao meu humilde recanto pessoal de projetos, aqui vai haver um resumo breve de
-        quem sou e minha conduta e objetivo.
-      </div>
-    </div>
+  <!-- MAIN -->
 
-    <div class="page">
-      <div class="front">
-        <h2>About</h2>
-        2. Sou Eduardo Dos Santos Ferreira, eu sou front-end developer naturalizado Brasileiro, no atual estado de São
-        Paulo, na cidade de Itanhaém.
-      </div>
-      <div class="back">
-        <h2>Study</h2>
-        3. Estudo de maneira integral para as vagas de T.I, pretendo seguir nessa carreira, e pretendo
-        fazer a faculdade de A.D.S (Analise e desenvolvimento de sistemas).
-      </div>
-    </div>
+  <div id="kontainer" class="container">
 
-    <div class="page">
-      <div class="front">
-        <h2>Cursos</h2>
-        4. Estou cursando desenvolvimento de sistemas na Escola Tecnica Estadual de Itanhaem, atualmente estou no 3
-        modulo. E estou desenvolvendo meu trabalho de conclusao de curso (TCC)
-      </div>
-      <div class="back">
-        <h2>TCC</h2>
-        5. Meu trabalho de conclusão de curso se refere ao um conversor de sensibilidade para jogos com teor
-        competitivo, mais voltados aos pro players.
+    <!-- Serana -->
+    <div class="npc">
+      <div data-aos="fade-right" class="Serana">
+        <h1>Serana</h1>
+        <h5>The Blue Jasmin</h5>
       </div>
     </div>
+    <!-- /Serana -->
 
-    <div class="page">
-      <div class="front">
-        <h2>Projects</h2>
-        6. Atualmente tenho um pouco mais de 70 projetos em atividade constante recebendo updates diarios, e assim que
-        prontos eles ficam disponibilizados no site github !
-      </div>
-      <div class="back">
-        <h2>Contribution</h2>
-        7. Contribuo em projetos alheios para enriquecer meu conhecimento, instalando, aprimorando e corrigindo
-        problemas.
-        Deixando disponivel no meu perfil.
-      </div>
-    </div>
+<!-- Serna's Dialogue -->
+<!-- Serana's Dialogue -->
+<div data-aos="fade-right" class="dialogue-container" id="seranaDialogueContainer">
+  <div class="dialogue" id="Seranadialogue">
+    <!-- Initial dialogue with input -->
+    <p id="inputDialogue">Oh, você é um novo rosto por aqui! Que alegria ter um visitante tão encantador. Poderia me contar seu nome? <input type="text" id="userNameInput" onkeydown="checkEnter(event)"></p>
+  </div>
+  <!-- Botões de diálogo -->
+  <div class="button-container">
+    <button class="dialogue-button" id="nextButtonSerana" onclick="proximoDialogoSerana()">Próximo Diálogo</button>
+    <button class="dialogue-button" id="prevButtonSerana" onclick="dialogoAnteriorSerana()">Diálogo Anterior</button>
+  </div>
+</div>
 
-    <div class="page">
-      <div class="front">
-        <h2>Notas</h2>
-        8. Obrigado por comparecer ao meu portfolio.
-      </div>
-      <div id="costas" class="back">
-      </div>
-    </div>
-  </div> -->
-  <!-- /Portfolio -->
+  </div>
+
+  <a href="./library.html">
+    <div class="loader"></div>
+  </a>
+  </div>
+  <!-- /Serana's Dialogue -->
+
+  <!-- /MAIN -->
 
   <!-- JS  -->
 
@@ -167,13 +134,11 @@
 
   <!-- /AOS -->
 
-  <!-- FST -->
+  <!-- Main -->
 
-  <a href="#" class="to-top">
-    <i class="fa fa-chevron-up" style="font-size:25px;color:rgb(0, 0, 0)"></i></a>
   <script src="../data/assets/js/scripts/main.js"></script>
 
-  <!-- /FST -->
+  <!-- Main -->
 
   <!-- Boostrap -->
 
@@ -197,9 +162,9 @@
   <!-- Dialogues -->
   <script src="../data/assets/js/npc/dialogue01.js"></script>
 
-<!-- Fullscreen -->
-<script src="../data/assets/js/scripts/fullscreen.js"></script>
-<!-- /Fullscreen -->
+  <!-- Fullscreen -->
+  <script src="../data/assets/js/scripts/fullscreen.js"></script>
+  <!-- /Fullscreen -->
 
   <!-- /JS -->
 
