@@ -48,14 +48,12 @@
   #kontainer {
     text-align: left;
     position: absolute;
-    top: 59%; /* Ajuste a posição conforme necessário */
-    left: 55%;
+    top: 54%; /* Ajuste a posição conforme necessário */
+    left: 37%;
     padding-left: 270px;
     transform: translate(-50%, -50%);
     font-size: 20px;
-    color: white;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
-      0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+    color: rgb(0, 32, 192);
     z-index: 2; /* Certifique-se de que o kontainer esteja acima da imagem fire */
   }
 }
@@ -66,8 +64,6 @@
     position: absolute;
     font-size: 20px;
     color: white;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
-      0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
   }
 }
 
