@@ -10,6 +10,7 @@ const proximoDialogo = () => {
   if (indiceDialogoAtual < dialogos.length - 1) {
     indiceDialogoAtual++;
     exibirDialogoAtual();
+    exibirLoaderSeNecessario();
   }
 };
 
@@ -17,6 +18,7 @@ const dialogoAnterior = () => {
   if (indiceDialogoAtual > 0) {
     indiceDialogoAtual--;
     exibirDialogoAtual();
+    exibirLoaderSeNecessario();
   }
 };
 
@@ -25,35 +27,16 @@ const exibirDialogoAtual = () => {
   eldrystanDialogue.innerHTML = `<p>${dialogos[indiceDialogoAtual]}</p>`;
 };
 
-document.querySelector('.dialogue-container').classList.add('show');
-
-// Serana's Dialogue
-
-const seranaDialogos = [
-  "Oh, você é um novo rosto por aqui! Que alegria ter um visitante tão encantador. Poderia me contar seu nome?",
-  "Bem-vindo(a), [Nome]. É um prazer conhecê-lo(a). Espero que tenha tido uma jornada agradável até aqui.",
-  "Sinta-se à vontade para explorar nosso refúgio e conversar. Estou sempre interessada em conhecer novas histórias e experiências."
-];
-
-let indiceDialogoSeranaAtual = 0;
-
-const proximoDialogoSerana = () => {
-  if (indiceDialogoSeranaAtual < seranaDialogos.length - 1) {
-    indiceDialogoSeranaAtual++;
-    exibirDialogoSeranaAtual();
+const exibirLoaderSeNecessario = () => {
+  const dialogoAlvo = "Vá para a biblioteca, minha amada Serana irá lhe recepcionar.";
+  const loader = document.querySelector('.loader');
+  if (dialogos[indiceDialogoAtual] === dialogoAlvo) {
+    loader.style.display = 'block';
+  } else {
+    loader.style.display = 'none';
   }
 };
 
-const dialogoAnteriorSerana = () => {
-  if (indiceDialogoSeranaAtual > 0) {
-    indiceDialogoSeranaAtual--;
-    exibirDialogoSeranaAtual();
-  }
-};
-
-const exibirDialogoSeranaAtual = () => {
-  const seranaDialogue = document.getElementById("Seranadialogue");
-  seranaDialogue.innerHTML = `<p>${seranaDialogos[indiceDialogoSeranaAtual]}</p>`;
-};
-
 document.querySelector('.dialogue-container').classList.add('show');
+exibirDialogoAtual();
+exibirLoaderSeNecessario();

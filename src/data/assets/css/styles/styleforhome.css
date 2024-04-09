@@ -163,6 +163,7 @@
 
 /* Marcador */
 .loader {
+  display: none;
   width: 44.8px;
   height: 44.8px;
   position: absolute;
