@@ -74,8 +74,37 @@
     <img src="../data/video/gif/locations/bonfire/shop.gif" id="backshop" class="img-fluid" alt="Shop">
   </div>
   <!-- /Shop -->
+
+  <div id="kontainer" class="container">
+
+    <!-- Eldrystan -->
+    <div class="npc">
+      <div data-aos="fade-right" class="Eldrystan">
+        <h1>Bahaal</h1>
+        <h5>The Merchant</h5>
+      </div>
+    </div>
+    <!-- /Eldrystan -->
+
+    <!-- Eldrystan's Dialogue -->
+    <div data-aos="fade-right" class="dialogue-container">
+      <div class="dialogue" id="Eldrystandialogue">
+        <p>Mais um cliente para minha loja você não parece ser daqui, espero que não estja perdido!</p>
+      </div>
+      <!-- Botões de diálogo -->
+      <div class="button-container">
+        <button class="dialogue-button" id="nextButtonEldrystan" onclick="proximoDialogo()">Próximo Diálogo</button>
+        <button class="dialogue-button" id="prevButtonEldrystan" onclick="dialogoAnterior()">Diálogo Anterior</button>
+      </div>
+    </div>
+  </div>
+  
+  <a href="./library.html">
+    <div class="loader"></div>
+  </a>
+</div>
+
   <!-- JS  -->
-  <!-- AOS -->
   <script src="../data/assets/js/static/aos.js"></script>
   <script>
     AOS.init({
@@ -83,27 +112,15 @@
     }
     );
   </script>
-  <!-- /AOS -->
-  <!-- Boostrap -->
   <script src="../data/assets/js/static/bootstrap.bundle.min.js"></script>
   <script src="../data/assets/js/static/popper.min.js"></script>
-  <!-- /Bootstrap -->
-  <!-- Main -->
   <script src="../data/assets/js/scripts/main.js"></script>
-  <!-- Main -->
-  <!-- Audio -->
   <script src="../data/assets/js/services/audio.js"></script>
-  <!-- /Audio -->
-  <!-- Dialogues -->
-  <script src="../data/assets/js/npc/dialogue01.js"></script>
-  <!-- Fullscreen -->
+  <script src="../data/assets/js/npc/dialogue03.js"></script>
   <script src="../data/assets/js/scripts/fullscreen.js"></script>
-  <!-- /Fullscreen -->
-  <!-- Logo -->
+
   <script src="../data/assets/js/scripts/logos.js"></script>
-  <!-- /Logo -->
-  <!-- /JS -->
+
 </body>
 
 </html>
-<!-- Todos os direitos reservados a Eduardo dos Santos Ferreira -->

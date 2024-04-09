@@ -173,9 +173,6 @@
   z-index: 2; /* Set z-index higher than the "fire" image */
 }
 
-@media screen and (max-width: 100000px) and (min-width: 1200px) {
-}
-
 .loader:before,
 .loader:after {
   content: "";
