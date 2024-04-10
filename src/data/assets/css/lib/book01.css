@@ -61,8 +61,8 @@
 
 @media screen and (max-width: 600px) {
   .book {
-    width: 200px; /* Faça o ajuste conforme necessário para telas menores */
-    height: 250px;
+    width: 250px; /* Faça o ajuste conforme necessário para telas menores */
+    height: 350px;
     rotate: 0; /* Redefina a rotação para telas menores, se necessário */
   }
 
