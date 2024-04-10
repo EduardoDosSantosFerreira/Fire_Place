@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FirePlace</title>
-  <!-- CSS -->
   <link rel="icon" type="image" sizes="50x50" href="../data/assets/img/icons/fire.png">
   <link rel="stylesheet" href="../data/assets/css/styles/styleforhome.css">
   <link rel="stylesheet" href="../data/assets/css/static/bootstrap.min.css">
   <link rel="stylesheet" href="../data/assets/css/utils/offmenu.css">
   <link rel="stylesheet" href="../data/assets/css/static/aos.css">
   <link rel="stylesheet" href="../data/fonts/fonts.css">
-  <!-- /CSS -->
 </head>
-
 <body>
-  <!-- NAV -->
   <div class="menu-container">
     <img src="../data/assets/img/icons/map.webp" id="map" alt="Abrir Menu">
     <nav class="off-canvas-menu">
@@ -24,16 +19,8 @@
         <img src="../data/video/gif/off_menu/compass.gif" id="bussola" alt="Fechar Menu"></button>
       <ul>
         <li>
-          <a href="./home.html">Home</a>
-          <img src="../data/video/gif/off_menu/Campfire.webp" id="icon" alt="Home">
-        </li>
-        <li>
-          <a href="#">About</a>
+          <a href="#">Atributos</a>
           <img src="../data/video/gif/off_menu/blinktotem.gif" id="icon" alt="About/Sobre">
-        </li>
-        <li>
-          <a href="#">Projects</a>
-          <img src="../data/video/gif/off_menu/Enchanting_Table.webp" id="icon" alt="Projetos">
         </li>
         <li class="dropdown">
           <a href="#" class="dropbtn">Viagens</a>
@@ -43,7 +30,6 @@
             <a href="./shop.html">Mercado</a>
           </div>
         </li>
-
         <li class="dropdown">
           <a href="#" class="dropbtn">Mochila</a>
           <div class="dropdown-content fade-down">
@@ -52,72 +38,37 @@
             <a href="#">Coletaveis</a>
           </div>
         </li>
-
-        <li>
-          <a href="#">Repository</a>
-          <img src="../data/video/gif/off_menu/Chest.webp" id="icon" alt="Repositório">
-        </li>
-        <li>
-          <a href="#">Curriculum</a>
-          <img src="../data/video/gif/off_menu/Enchanted_Book.webp" id="icon" alt="Curriculum">
-        </li>
-        <li>
-          <a href="#">Contact</a>
-          <img src="../data/assets/img/icons/livro_pena.png" id="icon" alt="Contato">
-        </li>
         <img src="../data/video/gif/off_menu/jukebox.gif" id="jkbx" alt="Music">
       </ul>
     </nav>
   </div>
-  <!-- /NAV -->
-
-  <!-- INTRO -->
   <div id="fire-container">
     <p data-aos="fade-top" id="fire-text">Bem-vindo!</p>
     <img src="../data/video/gif/locations/bonfire/fireplace_nook_v2.gif" class="img-fluid" id="fire"
       alt="Uma fogueira para o viajante relaxar.">
-    <!-- /INTRO -->
-
-    <!-- MAIN -->
-
     <div id="kontainer" class="container">
-
-      <!-- Eldrystan -->
       <div class="npc">
         <div data-aos="fade-right" class="Eldrystan">
           <h1>Eldrystan</h1>
           <h5>The Archmage</h5>
         </div>
       </div>
-      <!-- /Eldrystan -->
-
-      <!-- Eldrystan's Dialogue -->
       <div data-aos="fade-right" class="dialogue-container">
         <div class="dialogue" id="Eldrystandialogue">
           <p>Oh, olá, viajante ! Que alegria ter você em minha humilde morada! Bem-vindo ao meu lar
             aconchegante. Espero que sua jornada tenha sido segura e repleta descobertas!</p>
         </div>
-        <!-- Botões de diálogo -->
         <div class="button-container">
           <button class="dialogue-button" id="nextButtonEldrystan" onclick="proximoDialogo()">Próximo Diálogo</button>
           <button class="dialogue-button" id="prevButtonEldrystan" onclick="dialogoAnterior()">Diálogo Anterior</button>
         </div>
       </div>
     </div>
-    
     <a href="./library.html">
       <div class="loader"></div>
     </a>
   </div>
-  <!-- /Eldrystan's Dialogue -->
-
-  <!-- /MAIN -->
-  <!-- JS  -->
-  <!-- Main -->
   <script src="../data/assets/js/scripts/main.js"></script>
-  <!-- Main -->
-
-  <!-- AOS -->
   <script src="../data/assets/js/static/aos.js"></script>
   <script>
     AOS.init({
@@ -125,39 +76,21 @@
     }
     );
   </script>
-  <!-- /AOS -->
-  <!-- Boostrap -->
   <script src="../data/assets/js/static/bootstrap.bundle.min.js"></script>
   <script src="../data/assets/js/static/popper.min.js"></script>
-  <!-- /Bootstrap -->
-  <!-- Audio -->
   <script src="../data/assets/js/services/audio.js"></script>
-  <!-- /Audio -->
-  <!-- Biblioteca -->
   <script src="../data/assets/js/lib/book01.js"></script>
-  <!-- /Biblioteca -->
-  <!-- Dialogues -->
   <script src="../data/assets/js/npc/dialogue01.js"></script>
-  <!-- Logo -->
   <script src="../data/assets/js/scripts/logos.js"></script>
-  <!-- /Logo -->
-  <!-- Fullscreen -->
   <script src="../data/assets/js/scripts/fullscreen.js"></script>
-  <!-- /Fullscreen -->
-  <!-- /JS -->
-  <!-- ÁUDIO 1: Chuva -->
   <audio id="audioChuva" loop>
     <source src="../data/audio/chuva.mp3" type="audio/mp3">
   </audio>
-  <!-- ÁUDIO 2: Floresta -->
   <audio id="audioFloresta" loop>
     <source src="../data/audio/floresta.mp3" type="audio/mp3">
   </audio>
-  <!-- ÁUDIO 3: Fogueira -->
   <audio id="audioFogueira" loop>
     <source src="../data/audio/fogueira.mp3" type="audio/mp3">
   </audio>
 </body>
-
 </html>
-<!-- Todos os direitos reservados a Eduardo dos Santos Ferreira -->

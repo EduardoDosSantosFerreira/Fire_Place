@@ -1,9 +1,9 @@
 const dialogos = [
-  "Mais um cliente para minha loja você não parece ser daqui, espero que não estja perdido!",
-  "Vou te dar algo mas você me fará um favor em troca.",
-  "Bem de qualquer maneira poderá se encontrar por aqui, tome isso é um mapa para te ajudar se encontrar, não costumo ser tão bonzinho.",
-  "Calma, não vou pedir nada demais para você, apenas que recupere um dos meus itens da minha loja.",
-  "Um anel antigo ele é muito especial, mas não estava a venda. Eu fui roubado, então quero que você tome ele de volta para mim!.",
+  "Bem-vindo à minha humilde loja. Me chamo Bahaal. Você parece um estranho por aqui. Espero que não esteja perdido.",
+  "Vou lhe oferecer algo, mas em troca, preciso de um favor seu.",
+  "De qualquer forma, aqui está um mapa para ajudá-lo a se orientar. Não costumo ser tão generoso.",
+  "Não se preocupe, não vou pedir nada impossível. Apenas preciso que recupere um dos meus itens que foram roubados.",
+  "Trata-se de uma moeda antiga, extremamente especial para mim. Fui vítima de um roubo e quero que a recupere para mim.",
 ];
 
 let indiceDialogoAtual = 0;

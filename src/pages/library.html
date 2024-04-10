@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Library</title>
-  <!-- CSS -->
   <link rel="icon" type="image" sizes="50x50" href="../data/assets/img/icons/livro_pena.png">
   <link rel="stylesheet" href="../data/assets/css//static/bootstrap.min.css">
   <link rel="stylesheet" href="../data/assets/css/styles/styleforlib.css">
   <link rel="stylesheet" href="../data/assets/css//utils/offmenu.css">
   <link rel="stylesheet" href="../data/assets/css/static/aos.css">
   <link rel="stylesheet" href="../data/fonts/fonts.css">
-
-  <!-- Biblioteca -->
   <link rel="stylesheet" href="../data/assets/css/lib/book01.css">
-  <!-- /Biblioteca -->
-
-  <!-- /CSS -->
 </head>
-
 <body>
-  <!-- NAV -->
   <div class="menu-container">
     <img src="../data/assets/img/icons/map.webp" id="map" alt="Abrir Menu">
     <nav class="off-canvas-menu">
@@ -29,16 +20,8 @@
         <img src="../data/video/gif/off_menu/compass.gif" id="bussola" alt="Fechar Menu"></button>
       <ul>
         <li>
-          <a href="./home.html">Home</a>
-          <img src="../data/video/gif/off_menu/Campfire.webp" id="icon" alt="Home">
-        </li>
-        <li>
-          <a href="#">About</a>
+          <a href="#">Atributos</a>
           <img src="../data/video/gif/off_menu/blinktotem.gif" id="icon" alt="About/Sobre">
-        </li>
-        <li>
-          <a href="#">Projects</a>
-          <img src="../data/video/gif/off_menu/Enchanting_Table.webp" id="icon" alt="Projetos">
         </li>
         <li class="dropdown">
           <a href="#" class="dropbtn">Viagens</a>
@@ -48,7 +31,6 @@
             <a href="./shop.html">Mercado</a>
           </div>
         </li>
-
         <li class="dropdown">
           <a href="#" class="dropbtn">Mochila</a>
           <div class="dropdown-content fade-down">
@@ -57,74 +39,44 @@
             <a href="#">Coletaveis</a>
           </div>
         </li>
-
-        <li>
-          <a href="#">Repository</a>
-          <img src="../data/video/gif/off_menu/Chest.webp" id="icon" alt="Repositório">
-        </li>
-        <li>
-          <a href="#">Curriculum</a>
-          <img src="../data/video/gif/off_menu/Enchanted_Book.webp" id="icon" alt="Curriculum">
-        </li>
-        <li>
-          <a href="#">Contact</a>
-          <img src="../data/assets/img/icons/livro_pena.png" id="icon" alt="Contato">
-        </li>
         <img src="../data/video/gif/off_menu/jukebox.gif" id="jkbx" alt="Music">
       </ul>
     </nav>
   </div>
-  <!-- /NAV -->
-
-  <!-- Biblioteca -->
-  <div class="library" id="lib">
+  <div id="fire-container">
     <p data-aos="fade-down" id="lib-text">Biblioteca!</p>
     <img src="../data/video/gif/locations/bonfire/biblioteca.gif" id="blib" class="img-fluid" alt="Biblioteca">
-  </div>
-  <!-- /Biblioteca -->
-
-  <div id="kontainer" class="container">
-    <!-- Serana -->
-    <div class="npc">
-      <div data-aos="fade-right" class="Serana">
-        <h1>Serana</h1>
-        <h5>The Blue Jasmin</h5>
+    <div id="kontainer" class="container">
+      <div class="npc">
+        <div data-aos="fade-right" class="Serana">
+          <h1>Serana</h1>
+          <h5>The Blue Jasmin</h5>
+        </div>
+      </div>
+      <div data-aos="fade-right" class="dialogue-container" id="seranaDialogueContainer">
+        <div class="dialogue" id="Seranadialogue">
+          <p>Oh, você é um novo rosto por aqui! Que alegria ter um visitante tão encantador. Poderia me contar seu nome?
+          </p>
+        </div>
+        <div class="button-container">
+          <button class="dialogue-button" id="nextButtonSerana" onclick="proximoDialogoSerana()">Próximo
+            Diálogo</button>
+          <button class="dialogue-button" id="prevButtonSerana" onclick="dialogoAnteriorSerana()">Diálogo
+            Anterior</button>
+        </div>
       </div>
     </div>
-    <!-- /Serana -->
-
-<!-- Serana's Dialogue -->
-<div data-aos="fade-right" class="dialogue-container" id="seranaDialogueContainer">
-  <div class="dialogue" id="Seranadialogue">
-    <!-- Initial dialogue with input -->
-    <p>Oh, você é um novo rosto por aqui! Que alegria ter um visitante tão encantador. Poderia me contar seu nome?</p>
+    <a href="./shop.html">
+      <div class="loader" style="display: none;"></div>
+    </a>
   </div>
-  <!-- Botões de diálogo -->
-  <div class="button-container">
-    <button class="dialogue-button" id="nextButtonSerana" onclick="proximoDialogoSerana()">Próximo Diálogo</button>
-    <button class="dialogue-button" id="prevButtonSerana" onclick="dialogoAnteriorSerana()">Diálogo Anterior</button>
+  <div id="dialog-overlay" class="dialog-overlay">
+    <div id="dialog-box" class="dialog-box">
+      <img src="../data/assets/img/icons/R.png" id="cat" alt="cat"> <p style="color: black; display: inline;">Poderia me contar seu nome?</p>
+      <input type="text" id="nomeUsuarioInput">
+      <button onclick="fecharDialog()">Confirmar</button>
+    </div>
   </div>
-</div>
-  </div>
-  <!-- /Serana's Dialogue -->
-
-  <!-- Caixa de diálogo personalizada para inserir o nome do usuário -->
-<div id="dialog-overlay" class="dialog-overlay">
-  <div id="dialog-box" class="dialog-box">
-    <p>Por favor, digite seu nome:</p>
-    <input type="text" id="nomeUsuarioInput">
-    <button onclick="fecharDialog()">Confirmar</button>
-  </div>
-</div>
-
-
-<a href="./shop.html">
-  <div class="loader" style="display: none;"></div>
-</a>
-
-  
-
-  <!-- scripts  -->
   <script src="../data/assets/js/static/aos.js"></script>
   <script>
     AOS.init({
@@ -140,5 +92,4 @@
   <script src="../data/assets/js/npc/dialogue02.js"></script>
   <script src="../data/assets/js/scripts/fullscreen.js"></script>
 </body>
-
 </html>
