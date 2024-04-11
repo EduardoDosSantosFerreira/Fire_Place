@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Shop
   // Função para exibir o texto e iniciar o efeito de desaparecimento
   function mostrarTextoTemporario() {
-    var elementoTexto = document.getElementById("shop-text");
+    var elementoTexto = document.getElementById("logo");
 
     // Mostrar o texto
     elementoTexto.style.opacity = 1;

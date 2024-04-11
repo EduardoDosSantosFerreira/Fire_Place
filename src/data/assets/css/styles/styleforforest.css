@@ -9,16 +9,28 @@
     height: 51dvi;
 }
 
-#forest-text {
+#logo {
     position: absolute;
     top: 19%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 30px;
+    font-size: 60px;
     color: white;
     text-shadow: 22px 9px 5px rgb(0, 0, 0);
     opacity: 1;
     transition: opacity 1.5s ease-in-out; /* Adiciona uma transição de 1.5 segundos */
+  }
+
+  @media screen and (max-width: 1100px) {
+    #logo {
+      font-size: 25px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    #logo {
+        font-size: 15px;
+    }
   }
 
 #bee {
