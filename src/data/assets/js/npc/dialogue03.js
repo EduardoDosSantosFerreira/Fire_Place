@@ -4,6 +4,8 @@ const dialogos = [
   "De qualquer forma, aqui está um mapa para ajudá-lo a se orientar. Não costumo ser tão generoso.",
   "Não se preocupe, não vou pedir nada impossível. Apenas preciso que recupere um dos meus itens que foram roubados.",
   "Trata-se de uma moeda antiga, extremamente especial para mim. Fui vítima de um roubo e quero que a recupere para mim.",
+  "Eles correram para floresta rapidamente e fugiram.",
+
 ];
 
 let indiceDialogoAtual = 0;
@@ -30,7 +32,7 @@ const exibirDialogoAtual = () => {
 };
 
 const exibirLoaderSeNecessario = () => {
-  const dialogoAlvo = "Vá para a biblioteca, minha amada Serana irá lhe recepcionar.";
+  const dialogoAlvo =   "Eles correram para floresta rapidamente e fugiram.";
   const loader = document.querySelector('.loader');
   if (dialogos[indiceDialogoAtual] === dialogoAlvo) {
     loader.style.display = 'block';

@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bahaal's Shop!</title>
+  <title>Indigo's forest!</title>
   <link rel="icon" type="image" sizes="50x50" href="../data/assets/img/icons/coin.ico">
   <link rel="stylesheet" href="../data/assets/css//static/bootstrap.min.css">
-  <link rel="stylesheet" href="../data/assets/css/styles/styleforshop.css">
+  <link rel="stylesheet" href="../data/assets/css/styles/styleforforest.css">
   <link rel="stylesheet" href="../data/assets/css//utils/offmenu.css">
   <link rel="stylesheet" href="../data/assets/css/static/aos.css">
   <link rel="stylesheet" href="../data/fonts/fonts.css">
@@ -27,7 +27,7 @@
           <div class="dropdown-content fade-down">
             <a href="./home.html">Fogueira</a>
             <a href="./library.html">Biblioteca</a>
-            <a href="./shop.html">Mercado</a>
+            <a href="./forest.html">Mercado</a>
           </div>
         </li>
         <li class="dropdown">
@@ -42,30 +42,44 @@
       </ul>
     </nav>
   </div>
-  <div class="shop" id="shop">
-    <p data-aos="fade-top" id="shop-text">Bahaal's Shop!</p>
-    <img src="../data/video/gif/locations/bonfire/shop.gif" id="backshop" class="img-fluid" alt="Shop">
-  <div id="kontainer" class="container">
-    <div class="npc">
-      <div data-aos="fade-right" class="Eldrystan">
-        <h1>Bahaal</h1>
-        <h5>The Merchant</h5>
-      </div>
-    </div>
-    <div data-aos="fade-right" class="dialogue-container">
-      <div class="dialogue" id="Eldrystandialogue">
-        <p>Mais um cliente para minha loja você não parece ser daqui, espero que não estja perdido!</p>
-      </div>
-      <div class="button-container">
-        <button class="dialogue-button" id="nextButtonEldrystan" onclick="proximoDialogo()">Próximo Diálogo</button>
-        <button class="dialogue-button" id="prevButtonEldrystan" onclick="dialogoAnterior()">Diálogo Anterior</button>
-      </div>
-    </div>
+  <div class="forest" id="forest">
+    <p data-aos="fade-top" id="forest-text">Indigo forest</p>
+    <img src="../data/video/gif/locations/forest/forest.gif" id="backforest" class="img-fluid" alt="forest">
+    
+    <div class="container" id="space-bee">
+      <img src="../data/video/gif/animals/abelha.gif" id="bee" alt="bee">
+      <div class="health-bar" id="health-bar"></div>
   </div>
-  <a href="./library.html">
-    <div class="loader"></div>
-  </a>
+  
 </div>
+
+<div class="container-fluid" id="action-bar">
+  <div>
+      <button class="action-button" onclick="increaseZIndex()">Fight</button>
+      <button class="action-button">Bag</button>
+  </div>
+  <div>
+      <button class="action-button">Arsenal</button>
+      <button class="action-button">Run</button>
+  </div>
+</div>
+
+<div class="container-fluid battle-bar" id="battle-bar">
+  <div>
+      <button class="battle-button" id="sword">Sword</button>
+      <button class="battle-button" id="bow">Bow</button>
+  </div>
+  <div>
+      <button class="battle-button" id="dagger">Dagger</button>
+      <button class="battle-button" id="staff">Staff</button>
+  </div>
+</div>
+
+
+
+<a href="./library.html">
+    <div class="loader"></div>
+</a>
 
   <script src="../data/assets/js/static/aos.js"></script>
   <script>
@@ -81,5 +95,6 @@
   <script src="../data/assets/js/npc/dialogue03.js"></script>
   <script src="../data/assets/js/scripts/fullscreen.js"></script>
   <script src="../data/assets/js/scripts/logos.js"></script>
+  <script src="../data/assets/js/scripts/actionandbattlebar.js"></script>
 </body>
 </html>

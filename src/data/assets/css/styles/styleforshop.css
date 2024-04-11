@@ -145,16 +145,14 @@
 
 /* Marcador */
 .loader {
-  display: none;
   width: 44.8px;
   height: 44.8px;
   position: absolute;
   top: 93%;
   left: 45%;
   transform: translate(-50%, -50%) rotate(45deg);
-  z-index: 2; /* Set z-index higher than the "fire" image */
+  z-index: 2;
 }
-
 .loader:before,
 .loader:after {
   content: "";
@@ -165,23 +163,19 @@
   background-image: radial-gradient(
     circle 11.2px at 50% 50%,
     #0000 94%,
-    #0c8f00
+    #007a8f
   );
 }
-
 .loader:after {
   animation: pulse-ytk0dhmd 1s infinite;
   transform: perspective(336px) translateZ(0px);
 }
-
 @keyframes pulse-ytk0dhmd {
   to {
     transform: perspective(336px) translateZ(168px);
     opacity: 0;
   }
 }
-
-/* Responsividade Loader */
 @media screen and (max-width: 600px) {
   .loader {
     width: 44.8px;
@@ -189,11 +183,10 @@
     top: 80%;
   }
 }
-
 @media screen and (min-width: 601px) and (max-width: 1200px) {
   .loader {
     width: 44.8px;
     height: 44.8px;
-    top: 93%; /* Adjust the position */
+    top: 93%;
   }
 }
