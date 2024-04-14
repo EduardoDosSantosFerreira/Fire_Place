@@ -1,0 +1,253 @@
+#forest {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  #backforest {
+    width: 100%;
+    height: 51dvi;
+  }
+  
+  #logo {
+    position: absolute;
+    top: 19%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    text-shadow: 22px 9px 5px rgb(0, 0, 0);
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out; /* Adiciona uma transição de 1.5 segundos */
+    z-index: 999;
+  }
+  
+  @media screen and (max-width: 1100px) {
+    #logo {
+      font-size: 25px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    #logo {
+      font-size: 15px;
+    }
+  }
+  
+  #fire_dragon {
+    width: 1000px;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Garante que a Dragão fique na frente */
+  }
+  
+  @media screen and (max-width: 600px) {
+    #fire_dragon {
+      width: 105px;
+    }
+  }
+  
+  /* Marcador */
+  .loader {
+    display: none;
+    width: 44.8px;
+    height: 44.8px;
+    position: absolute;
+    top: 93%;
+    left: 45%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: 3; /* Define z-index maior que a imagem da Dragão */
+  }
+  
+  .loader:before,
+  .loader:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50% 50% 0 50%;
+    background: #0000;
+    background-image: radial-gradient(
+      circle 11.2px at 50% 50%,
+      #0000 94%,
+      #008f64
+    );
+  }
+  
+  .loader:after {
+    animation: pulse-ytk0dhmd 1s infinite;
+    transform: perspective(336px) translateZ(0px);
+  }
+  
+  @keyframes pulse-ytk0dhmd {
+    to {
+      transform: perspective(336px) translateZ(168px);
+      opacity: 0;
+    }
+  }
+  
+  /* Responsividade Loader */
+  @media screen and (max-width: 600px) {
+    .loader {
+      width: 44.8px;
+      height: 44.8px;
+      top: 80%;
+    }
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 1200px) {
+    .loader {
+      width: 44.8px;
+      height: 44.8px;
+      top: 93%; /* Ajusta a posição */
+    }
+  }
+  
+  #action-bar {
+    background-color: #ffff;
+    border-color: #008f64;
+    border-style: solid;
+    border-width: 1px;
+    height: 100px;
+    position: absolute;
+    top: calc(51dvi + -100px); /* Altura da backforest + -100px de espaço */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Garante que a ação-bar fique na frente */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+  }
+  
+  @media screen and (max-width: 800px) {
+    #action-bar {
+      top: calc(51dvi + -20px); /* Altura da backforest + 20px de espaço */
+      bottom: auto; /* Remove a definição de bottom */
+      height: 150px;
+    }
+    .action-button {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      background-color: #555;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+      width: 150px;
+    }
+  }
+  .action-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #555;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 150px;
+  }
+  .action-button:hover {
+    background-color: #777;
+  }
+  
+  #battle-bar {
+    background-color: #ffff;
+    border-color: #8f0000;
+    border-style: solid;
+    border-width: 1px;
+    height: 100px;
+    position: absolute;
+    top: calc(51dvi + -100px); /* Altura da backforest + -100px de espaço */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Garante que a ação-bar fique na frente */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+  }
+  
+  @media screen and (max-width: 800px) {
+    #battle-bar {
+      top: calc(51dvi + -20px); /* Altura da backforest + 20px de espaço */
+      bottom: auto; /* Remove a definição de bottom */
+      height: 150px;
+    }
+    .battle-button {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      background-color: #555;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+      width: 150px;
+    }
+  }
+  .battle-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #555;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 150px;
+  }
+  .battle-button:hover {
+    background-color: #777;
+  }
+  .health-bar {
+    position: absolute;
+    width: 300px;
+    height: 8px;
+    background-color: #00ff00; /* Cor verde para vida cheia */
+    border: 1px solid #000;
+    top: 8%; /* Ajuste a posição da barra em relação à Dragão */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+  }
+  #skull{
+    position: absolute;
+    width: 50px;
+    z-index: 91;
+    top: 6%;
+    left: 36.1%;
+  }
+  #sword-slash {
+    position: absolute;
+    top: 50%; /* Ajuste a posição vertical conforme necessário */
+    left: 40%; /* Ajuste a posição horizontal conforme necessário */
+    transform: translate(-50%, -50%);
+    z-index: 3; /* Garante que a imagem do golpe de espada esteja sempre acima da Dragão */
+    width: 600px;
+  }
+  @media screen and (max-width: 600px) {
+    #sword-slash {
+      width: 155px;
+    }
+  }
+  .red-hit {
+    filter: hue-rotate(315deg) contrast(2) brightness(0.9)
+      drop-shadow(0 5px 10px red);
+  }
+  
+  /* Estilos para a barra de vida do usuário */
+  #user-health-bar {
+    position: absolute;
+    width: 100px; /* Defini a largura máxima da barra de vida do jogador para 100 pixels */
+    height: 15px; /* Altura da barra */
+    background-color: #00ff00; /* Cor verde para vida cheia */
+    border: 1px solid #000;
+    bottom: 10px; /* Ajuste a posição da barra em relação à parte inferior da tela */
+    top: 85%;
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%);
+  }
