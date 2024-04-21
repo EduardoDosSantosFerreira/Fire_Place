@@ -214,8 +214,7 @@
   top: 9%; /* Posiciona a skull verticalmente no centro da barra de vida */
   transform: translateY(-50%);
   left: calc(50% - 270px); /* Posiciona a skull no início da barra de vida */
-  filter: hue-rotate(1deg) contrast(2) brightness(0.9) drop-shadow(0 5px 10px rgb(255, 0, 0)); /* Coloração do adversário ao receber dano */
-
+  filter: hue-rotate(200deg) contrast(2) brightness(0.9) drop-shadow(0 5px 10px rgb(255, 0, 0)); /* Coloração do adversário ao receber dano */
 }
 
 #sword-slash {
