@@ -6,16 +6,17 @@ var isfire_dragonAlive = true;
 var userHealthPoints = 100; // Defina o valor inicial dos pontos de vida do usuário
 var isUserAlive = true;
 
-// Função para atualizar a barra de vida da Dragão
+// Função para atualizar a barra de vida do Dragão
 function updateHealth() {
     var healthBar = document.getElementById("health-bar");
     var maxHealth = 30; // Valor máximo de pontos de vida
     var percentage = (healthPoints / maxHealth) * 100; // Calcula a porcentagem de vida
 
-    var maxWidth = 50; // Largura máxima da barra de vida
-    var newWidth = (percentage / 100) * maxWidth; // Calcula a nova largura da barra de vida
+    var containerWidth = healthBar.parentElement.offsetWidth; // Largura do contêiner pai
+    var maxWidthPercentage = 7; // Largura máxima da barra de vida em porcentagem do contêiner pai
+    var newWidth = (percentage / 100) * maxWidthPercentage; // Calcula a nova largura da barra de vida
 
-    healthBar.style.width = newWidth + "px"; // Define a largura da barra de vida
+    healthBar.style.width = newWidth + "%"; // Define a largura da barra de vida em porcentagem
 
     // Atualiza a cor da barra dependendo da porcentagem de vida
     if (percentage > 50) {
